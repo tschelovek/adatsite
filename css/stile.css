@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "myriadprobold";
+  src: local("E:/www/adatsite/fonts/MyriadProBold.otf");
+}
+@font-face {
+  font-family: "myriadpro";
+  src: local("E:/www/adatsite/fonts/MyriadProReg.otf");
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header-firstline {
+  display: flex;
+  justify-content: space-between;
+  background: #f6f6f6;
+}
+
+.loginNavigation {
+  display: flex;
+}
+.loginNavigation li {
+  margin: 0 10px;
+  font-size: 11px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #7e7e7e;
+  line-height: 1;
+}
+.loginNavigation li:nth-child(5) {
+  margin: 0;
+}
+.loginNavigation li a {
+  font-size: 11px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #7e7e7e;
+  line-height: 1;
+}
+
+.header-secondline {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.logo {
+  margin-top: 50px;
+}
+.logo a {
+  display: flex;
+  color: #454545;
+  font-size: 44px;
+  font-weight: normal;
+  font-family: myriadprobold, sans-serif;
+  color: #454545;
+  line-height: 1;
+}
+.logo a img {
+  border-style: none;
+  transform: translateY(5px);
+  height: 32px;
+  padding-right: 10px;
+}
+
+.searchForm {
+  font-family: myriadpro, sans-serif;
+  height: 30px;
+}
+.searchForm label {
+  display: flex;
+  border: 1px solid #e1e1e1;
+  width: 260px;
+  height: 30px;
+}
+.searchForm label input {
+  width: 100%;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+}
+.searchForm label button {
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-size: 15px;
+  color: #888888;
+}
+
+.mainNavigation {
+  align-self: flex-end;
+}
+
+.u_mainNavigation {
+  display: flex;
+  margin: 0;
+}
+.u_mainNavigation li {
+  padding: 10px 25px 0;
+  white-space: nowrap;
+}
+.u_mainNavigation li a {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #565656;
+  line-height: 1;
+}
+
+.sliderBig {
+  background: #cccccc;
+  height: 1070px;
+}
+
+.s_showcase {
+  background: #f6f6f6;
+}
+
+.showcase {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.showcase__item1, .showcase__item2, .showcase__item3, .showcase__item4, .showcase__item5 {
+  background: #cccccc;
+  margin: 0 auto;
+}
+
+.showcase__item1, .showcase__itemСontainer {
+  width: 64%;
+}
+
+.showcase__item2, .showcase__item5 {
+  width: 31%;
+}
+
+.showcase__item3, .showcase__item3 {
+  width: 49%;
+}
+
+.showcase__itemСontaine, .showcase__item4 {
+  height: 710px;
+}
+
+.showcase__item1 {
+  height: 430px;
+}
+
+.showcase__item2 {
+  height: 710px;
+}
+
+.showcase__item5 {
+  height: 250px;
+}
+
+.showcase__itemСontainer {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.showcase__item3 {
+  height: 49%;
+}
+
+/*# sourceMappingURL=stile.css.map */
