@@ -6,6 +6,10 @@
   font-family: "myriadpro"
   src: local("E:/www/adatsite/fonts/MyriadProReg.otf")
 
+@font-face
+  font-family: "myriadproit"
+  src: local("E:/www/adatsite/fonts/MyriadProIt.otf")
+
 @mixin font($color: $textDarkGrey, $family: $regular, $weight: normal, $size: $fs14, $line: 1)
   font:
     size: $size
@@ -36,6 +40,7 @@
 
 //  COLORS
 $textDarkGrey: #565656
+$textGrey: #999999
 $textUltraDarkGrey: #454545
 $textLightGrey: #7e7e7e
 $bgGrey: #cccccc
@@ -46,7 +51,10 @@ $white: #FFFFFF
 
 //  SIZES
 $fs11: 11px
+$fs12: 12px
+$fs13: 13px
 $fs14: 14px
+$fs16: 16px
 $fs25: 25px
 $fs40: 40px
 $fs44: 44px
@@ -55,7 +63,7 @@ $mBottom: 70px
 //  FONTS
 $regular: myriadpro, sans-serif
 $bold: myriadprobold, sans-serif
-
+$it: myriadproit, sans-serif
 
 ul
   list-style-type: none
@@ -139,38 +147,144 @@ a
   background: #f6f6f6
 
 .showcase
-  display: flex
-  flex-wrap: wrap
+  padding-top: 30px
+  display: grid
+  grid-gap: 20px
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: 430px 250px 250px
+
 
 .showcase__item1, .showcase__item2, .showcase__item3, .showcase__item4, .showcase__item5
   background: $bgGrey
   margin: 0 auto
-
-.showcase__item1, .showcase__itemСontainer
-  width: 64%
-
-.showcase__item2, .showcase__item5
-  width: 31%
-
-.showcase__item3, .showcase__item3
-  width: 49%
-
-.showcase__itemСontaine, .showcase__item4
-  height: 710px
+  width: 100%
 
 .showcase__item1
-  height: 430px
+  grid-column: span 2
 
 .showcase__item2
-  height: 710px
+  grid-row: span 2
 
-.showcase__item5
-  height: 250px
+.showcase__item4
+  grid-row: span 2
 
-.showcase__itemСontainer
+
+.shop-navigation
+  margin-top: 50px
+  text-align: center
+  ul
+    display: inline-flex
+    li
+      margin: 0 25px
+      a
+        @include font($color: $textGrey, $family: $bold, $size: $fs16, $line: 1)
+        padding: 10px
+        &:hover
+          @include font($color: $textDarkGrey, $family: $bold, $size: $fs16, $line: 1)
+          border-bottom: 2px solid $textUltraDarkGrey
+
+.shop-container
+  margin-top: 50px
   display: flex
-  flex-direction: row-reverse
   flex-wrap: wrap
+  justify-content: space-between
 
-.showcase__item3
-  height: 49%
+.buy
+  opacity: 0
+  @include transition
+
+.shop-item
+  display: flex
+  flex-direction: column
+  max-width: 270px
+  img
+    @include object-fit
+    max-height: 350px
+  &:hover .buy
+    opacity: 1
+    @include transition
+
+.namePrice
+  @include font($family: $regular, $size: $fs13, $line: 1.5)
+  display: flex
+  justify-content: space-between
+  margin-top: 25px
+
+.buy__cartInfo
+  margin-top: 10px
+  border: 2px solid $textUltraDarkGrey
+  display: flex
+  justify-content: space-around
+  a
+    width: 50%
+    text-align: center
+    @include font($color: $textUltraDarkGrey, $family: $bold, $size: $fs14, $line: 30px)
+    &:nth-child(2)
+      border-left: 2px solid $textUltraDarkGrey
+
+.buy__wish
+  display: flex
+  justify-content: space-between
+  a
+    @include font($color: $textUltraDarkGrey, $family: $it, $size: $fs13, $line: 30px)
+
+.buyLink
+  @include transition
+  &:hover
+    text-decoration: underline
+    @include transition
+
+.cost
+  font-weight: bold
+  display: flex
+  flex-direction: column
+  text-align: end
+  span
+    text-decoration: line-through
+    opacity: 0.6
+
+.s_showMore
+  display: flex
+  hr
+    width: 40%
+    color: $textDarkGrey
+
+.shopMore
+  margin-top: 5px
+  white-space: nowrap
+  @include font($color: $textUltraDarkGrey, $family: $bold, $size: $fs13)
+  @include transition
+  &:hover
+    text-decoration: underline
+    @include transition
+
+
+.footer
+  background: $textUltraDarkGrey
+  margin-top: 120px
+  height: 300px
+
+.footer__cnLinks
+  margin-top: 40px
+  display: flex
+  justify-content: space-between
+
+.footerInfoContainer
+  p
+    @include font($color: $textGrey, $family: $regular, $size: $fs12)
+
+.cnContainer
+  ul
+    display: flex
+    li
+      margin: 0 4px
+      border: 2px solid $textGrey
+      height: 40px
+      width: 40px
+      display: flex
+      align-items: center
+      justify-content: center
+      a
+        color: $textGrey
+        font-size: 22px
+        padding: 5px
