@@ -12,10 +12,15 @@
 }
 ul {
   list-style-type: none;
+  padding-inline-start: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+input, textarea {
+  outline: none;
 }
 
 .container {
@@ -88,7 +93,6 @@ a {
 .searchForm label input {
   width: 100%;
   padding-left: 10px;
-  outline: none;
   border: none;
 }
 .searchForm label button {
@@ -311,9 +315,449 @@ a {
 }
 
 .footer {
-  background: #454545;
-  margin-top: 120px;
-  height: 300px;
+  background: #1f1f1f;
+  margin-top: 60px;
+}
+
+.columnContainer {
+  display: flex;
+  padding-top: 60px;
+}
+
+.footer__column_first, .footer__column_second, .footer__column_third {
+  display: flex;
+  flex-direction: column;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.footer__column_first {
+  width: 40%;
+  padding-right: 25px;
+}
+
+.footer__column_second {
+  width: 35%;
+  padding: 0 25px;
+}
+
+.footer__column_third {
+  width: 25%;
+  padding-left: 25px;
+}
+
+.aboutFengo, .mostFavorite, .blogLinks, .quickContact, .subscribeForm, .information, .myAccount, .customer, .contacts, .twitter, .facebook {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+.aboutFengo h3, .mostFavorite h3, .blogLinks h3, .quickContact h3, .subscribeForm h3, .information h3, .myAccount h3, .customer h3, .contacts h3, .twitter h3, .facebook h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #b6b6b6;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.aboutFengo__container, .miniItems__container, .quickContact__container {
+  display: flex;
+  margin-top: 35px;
+}
+.aboutFengo__container img, .miniItems__container img, .quickContact__container img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.aboutFengo__text {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #7e7e7e;
+  line-height: 1.4;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.aboutFengo__text P {
+  margin: 0;
+}
+
+.footerLink {
+  text-transform: uppercase;
+  width: fit-content;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #b6b6b6;
+  line-height: 1.2;
+}
+.footerLink:hover {
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  text-decoration: underline;
+}
+
+.miniHeader_arrows, .miniHeader_button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrowsContainer {
+  width: 50px;
+  display: inline-block;
+  font-size: 22px;
+}
+.arrowsContainer a {
+  color: #b6b6b6;
+}
+
+.blogLinks__container {
+  display: flex;
+  margin-top: 35px;
+  justify-content: space-between;
+}
+
+.blogLinksItem img {
+  height: 150px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.blogLinksItem a p {
+  font-size: 13px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #999999;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.quickContact__container {
+  justify-content: space-between;
+}
+.quickContact__container img {
+  height: 210px;
+}
+
+.quickContact__form {
+  width: 48%;
+}
+.quickContact__form label {
+  display: none;
+}
+.quickContact__form input, .quickContact__form textarea {
+  width: 100%;
+  background: #1f1f1f;
+  padding: 10px;
+  line-height: 30px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #999999;
+  line-height: 1;
+  border: 1px solid #999999;
+  margin-bottom: 10px;
+}
+.quickContact__form input:nth-child(3), .quickContact__form textarea:nth-child(3) {
+  min-height: 120px;
+}
+.quickContact__form input:nth-child(3) text, .quickContact__form textarea:nth-child(3) text {
+  padding: 10px;
+}
+
+.sendMessage {
+  font-size: 12px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #999999;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.subscribeForm form {
+  display: inline-flex;
+  width: 100%;
+  border: 1px solid #999999;
+}
+.subscribeForm form label {
+  display: none;
+}
+.subscribeForm form input {
+  padding-left: 50px;
+  background: #1f1f1f;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #999999;
+  line-height: 1;
+  line-height: 50px;
+  border: none;
+  width: 100%;
+}
+.subscribeForm form button {
+  background: #1f1f1f;
+  border: none;
+  font-size: 30px;
+  color: #7e7e7e;
+  padding: 0 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.miniItems__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-miniItem {
+  max-width: 150px;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.shop-miniItem img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: auto;
+}
+.shop-miniItem:hover {
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  box-shadow: inset 0 0 10px 5px #7e7e7e;
+}
+
+.shop-miniItem__name {
+  display: flex;
+}
+
+.namePrice_miniItem {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #7e7e7e;
+  line-height: 1.2;
+}
+
+.cost_miniItem {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #FFFFFF;
+  line-height: 1.4;
+}
+.cost_miniItem span {
+  text-decoration: line-through;
+}
+
+.miniHeader__button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.miniButton {
+  width: 70px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #7e7e7e;
+  line-height: 20px;
+  border: 1px solid #7e7e7e;
+  text-align: center;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.miniButton:hover {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.twitter__container {
+  margin-top: 30px;
+}
+
+.twitter__name {
+  display: flex;
+}
+.twitter__name img {
+  height: 40px;
+}
+
+.twitter__name__link {
+  padding-left: 20px;
+  font-size: 17px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #7e7e7e;
+  line-height: 1.2;
+}
+.twitter__name__link span {
+  font-size: 13px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #999999;
+  line-height: 1.2;
+}
+
+.twitter__post {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #7e7e7e;
+  line-height: 1.4;
+}
+.twitter__post p {
+  margin: 20px 0 0;
+}
+
+.twitter__links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #999999;
+  line-height: 1.2;
+}
+.twitter__links p {
+  margin: 20px 0 0;
+}
+.twitter__links ul {
+  display: flex;
+  margin: 20px 0 0;
+}
+.twitter__links ul li {
+  padding-left: 20px;
+}
+.twitter__links ul li a {
+  font-size: 13px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #999999;
+  line-height: 1.2;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.twitter__links ul li a:hover {
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  color: #FFFFFF;
+}
+
+.facebook__container {
+  margin-top: 30px;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #999999;
+  line-height: 1.2;
+}
+.facebook__container a {
+  font-size: 13px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #b6b6b6;
+  line-height: 1.2;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.facebook__container a:hover {
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.facebook__text {
+  display: flex;
+}
+.facebook__text p {
+  margin: 0;
+}
+.facebook__text a {
+  margin-left: 10px;
+}
+
+.facebook__users {
+  margin-top: 20px;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.facebook__users img {
+  height: 60px;
+  border: 3px solid #565656;
+}
+
+.information, .myAccount, .customer, .contacts {
+  padding-bottom: 45px;
+}
+.information ul, .myAccount ul, .customer ul, .contacts ul {
+  margin-top: 25px;
+}
+.information ul li, .myAccount ul li, .customer ul li, .contacts ul li {
+  padding: 8px 0;
+}
+.information ul li a, .myAccount ul li a, .customer ul li a, .contacts ul li a {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #7e7e7e;
+  line-height: 1;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.information ul li a:hover, .myAccount ul li a:hover, .customer ul li a:hover, .contacts ul li a:hover {
+  color: #FFFFFF;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.contacts {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: myriadpro, sans-serif;
+  color: #7e7e7e;
+  line-height: 1;
 }
 
 .footer__cnLinks {
@@ -322,6 +766,10 @@ a {
   justify-content: space-between;
 }
 
+.footerInfoContainer ul {
+  display: flex;
+  justify-content: space-between;
+}
 .footerInfoContainer p {
   font-size: 12px;
   font-weight: normal;
@@ -341,6 +789,17 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  -moz-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+.cnContainer ul li:hover {
+  box-shadow: inset 0 0 5px 3px #7e7e7e;
+  -moz-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 .cnContainer ul li a {
   color: #999999;
