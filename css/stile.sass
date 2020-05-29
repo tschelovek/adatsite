@@ -48,6 +48,8 @@ $bgGrey: #cccccc
 $bgBlack: #1f1f1f
 $red: #cf4647
 $white: #FFFFFF
+$almostBlack: #333333
+$almostWhite: #dbdbdb
 
 
 //  SIZES
@@ -57,7 +59,10 @@ $fs13: 13px
 $fs14: 14px
 $fs16: 16px
 $fs17: 17px
+$fs20: 20px
+$fs23: 23px
 $fs25: 25px
+$fs30: 30px
 $fs40: 40px
 $fs44: 44px
 $mBottom: 70px
@@ -162,27 +167,129 @@ input, textarea
   background: #f6f6f6
 
 .showcase
-  padding-top: 30px
+  padding: 30px 0 65px
   display: grid
   grid-gap: 20px
   grid-template-columns: repeat(3, 1fr)
   grid-template-rows: 430px 250px 250px
 
 
-.showcase__item1, .showcase__item2, .showcase__item3, .showcase__item4, .showcase__item5
+.showcase__item1, .showcase__item2, .showcase__item3, .showcase__item4, .showcase__item5, .showcase__item6
   background: $bgGrey
   margin: 0 auto
   width: 100%
+  text-align: center
+  position: relative
+  a
+    position: absolute
+    @include font($color: $white, $family: $bold, $size: $fs14)
+    transform: translateX(-50%)
+    @include transition
+    &:hover
+      @include transition
+      text-decoration: underline
 
 .showcase__item1
   grid-column: span 2
+  a
+    bottom: 20px
+
+//.showcase__item1__arrows
+//  display: flex
+//  position: relative
+//  width: 100%
+//  justify-content: space-around
+//  a
+//    position: absolute
+//    font-size: 40px
+//    top: 50%
+//
+
+.showcase__item1__box
+  @include font($color: $white, $family: $bold, $size: $fs25)
+  margin-top: 110px
+  border: 1px solid $almostWhite
+  padding: 0 20px 70px
+  display: inline-block
+  h3
+    font-size: $fs40
+    margin: 70px 10px 20px
+
+.leftArrow, .rightArrow
+  a
+    top: 50%
+    font-size: 40px
+
+.leftArrow
+  a
+    left: 10px
+    transform: translateX(50%)
+
+.rightArrow
+  a
+    right: 10px
+    transform: translateX(-50%)
+
+.nameWithStripes1
+  display: flex
+  hr
+    width: 100px
+    transform: translateY(89px)
+    border: 1px solid $white
 
 .showcase__item2
   grid-row: span 2
+  a
+    bottom: 50px
+
+.showcase__item2__box
+  @include font($color: $almostBlack, $weight: bold, $family: $bold, $size: $fs20)
+  margin-top: 40px
+  h3
+    font-size: $fs25
+    margin: 15px 10px 20px
+  span
+    font-size: 18px
+
+.nameWithStripes2
+  display: flex
+  hr
+    width: 50px
+    transform: translateY(22px)
+    border: 1px solid $almostBlack
+
+.showcase__item3, .showcase__item6
+  a
+    bottom: 20px
 
 .showcase__item4
   grid-row: span 2
+  a
+    bottom: 60px
 
+.showcase__item3__box, .showcase__item6__box
+  @include font($color: $white, $family: $bold, $size: $fs23)
+  margin-top: 90px
+  h3
+    font-size: $fs40
+    margin: 0 0 20px
+
+.showcase__item5
+  @include font($color: $white, $weight: bold, $family: $bold, $size: $fs30)
+  p
+    margin-top: 115px
+
+.showcase__item6__box
+  font-size: 25px
+  h3
+    font-size: $fs30
+
+.nameWithStripes6
+  display: flex
+  hr
+    width: 50px
+    transform: translateY(10px)
+    border: 1px solid white
 
 .shop-navigation
   margin-top: 50px
@@ -614,3 +721,7 @@ input, textarea
         font-size: 22px
         padding: 5px
 
+
+
+
+        background-size: .625rem 3.125rem
