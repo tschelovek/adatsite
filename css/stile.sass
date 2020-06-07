@@ -59,10 +59,12 @@ $fs13: 13px
 $fs14: 14px
 $fs16: 16px
 $fs17: 17px
+$fs18: 18px
 $fs20: 20px
 $fs23: 23px
 $fs25: 25px
 $fs30: 30px
+$fs35: 35px
 $fs40: 40px
 $fs44: 44px
 $mBottom: 70px
@@ -91,6 +93,10 @@ input, textarea
   justify-content: space-between
   background: #f6f6f6
 
+.header-firstline__container
+  display: flex
+  width: 100%
+
 .loginNavigation
   display: flex
 
@@ -104,19 +110,31 @@ input, textarea
     a
       @include font($color: $textLightGrey, $size: $fs11)
 
+.region-pannel
+  @include font($color: $textLightGrey, $size: $fs11)
+  a
+    margin-left: 15px
+    @include font($color: $textLightGrey, $size: $fs11)
 
-.header-secondline
-  display: flex
-  flex-direction: row-reverse
+
+.header__secondline
+  position: relative
+  height: 110px
+
+.searchForm__container
+  position: absolute
+  top: 0
+  right: 0
 
 .logo
   margin-top: 50px
-
+  position: absolute
+  bottom: 20px
+  left: 0
   a
     display: flex
     color: #454545
     @include font($color: $textUltraDarkGrey, $family: $bold, $size: $fs44, $line: 1)
-
     img
       border-style: none
       transform: translateY(5px)
@@ -125,43 +143,80 @@ input, textarea
 
 .searchForm
   font-family: myriadpro, sans-serif
+  margin-top: 20px
   height: 30px
-
+  width: 260px
+  border: 1px solid #e1e1e1
+  display: flex
   label
-    display: flex
-    border: 1px solid #e1e1e1
-    width: 260px
-    height: 30px
+    display: none
+  input
+    width: 100%
+    padding-left: 10px
+    border: none
+  button
+    border: none
+    cursor: pointer
+    background: none
+    font-size: 15px
+    color: #888888
 
-    input
-      width: 100%
-      padding-left: 10px
-      border: none
-
-    button
-      border: none
-      cursor: pointer
-      background: none
-      font-size: 15px
-      color: #888888
-
-.mainNavigation
-  align-self: flex-end
+.mainNavigation__container
+  position: absolute
+  bottom: 20px
+  right: 0
 
 .u_mainNavigation
-  display: flex
+  display: inline-flex
   margin: 0
-
   li
-    padding: 10px 25px 0
+    margin: 10px 15px 0
     white-space: nowrap
-
+    &:last-child
+      margin: 10px 0 0 25px
     a
       @include font
+      opacity: 0.8
+      padding: 10px
+      @include transition
+      &:hover
+        text-decoration: underline
+        @include transition
+        opacity: 1
 
 .sliderBig
   background: $bgGrey
   height: 1070px
+
+.slider__container
+  position: relative
+  height: 100%
+
+.slider__text
+  @include font($color: $textUltraDarkGrey, $weight: bold, $size: $fs30)
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translateY(-50%)
+  h3
+    font-size: 100px
+    color: $white
+    margin: 20px 0
+  span
+    font-size: 35px
+  a
+    font-size: $fs14
+    color: $textUltraDarkGrey
+    @include transition
+    &:hover
+      @include transition
+      color: $white
+      text-decoration: underline
+
+
+.sliderRing
+  &:hover
+    fill: $white
 
 .s_showcase
   background: #f6f6f6
@@ -172,7 +227,6 @@ input, textarea
   grid-gap: 20px
   grid-template-columns: repeat(3, 1fr)
   grid-template-rows: 430px 250px 250px
-
 
 .showcase__item1, .showcase__item2, .showcase__item3, .showcase__item4, .showcase__item5, .showcase__item6
   background: $bgGrey
@@ -193,17 +247,7 @@ input, textarea
   grid-column: span 2
   a
     bottom: 20px
-
-//.showcase__item1__arrows
-//  display: flex
-//  position: relative
-//  width: 100%
-//  justify-content: space-around
-//  a
-//    position: absolute
-//    font-size: 40px
-//    top: 50%
-//
+    left: 50%
 
 .showcase__item1__box
   @include font($color: $white, $family: $bold, $size: $fs25)
@@ -216,19 +260,25 @@ input, textarea
     margin: 70px 10px 20px
 
 .leftArrow, .rightArrow
+  top: 50%
+  position: absolute
+  width: 45px
   a
-    top: 50%
     font-size: 40px
+    position: static
+    color: $white
+    @include transition
+    &:hover
+      color: $textDarkGrey
+      @include transition
 
 .leftArrow
-  a
-    left: 10px
-    transform: translateX(50%)
+  left: 10px
+  transform: translateX(50%)
 
 .rightArrow
-  a
-    right: 10px
-    transform: translateX(-50%)
+  right: 10px
+  transform: translateX(-50%)
 
 .nameWithStripes1
   display: flex
@@ -267,6 +317,24 @@ input, textarea
   a
     bottom: 60px
 
+.showcase__item4__box
+  @include font($color: $white, $family: $bold, $size: $fs30)
+  margin-top: 210px
+  span
+    font-size: $fs18
+    margin: 20px 0
+  h3
+    font-size: $fs35
+    margin: 0
+
+.nameWithStripes4
+  display: flex
+  hr
+    width: 80px
+    transform: translateY(12px)
+    border: 1px solid $white
+
+
 .showcase__item3__box, .showcase__item6__box
   @include font($color: $white, $family: $bold, $size: $fs23)
   margin-top: 90px
@@ -304,10 +372,11 @@ input, textarea
       a
         @include font($color: $textGrey, $family: $bold, $size: $fs16, $line: 1)
         padding: 10px
-
+        @include transition
         &:hover
           @include font($color: $textDarkGrey, $family: $bold, $size: $fs16, $line: 1)
           border-bottom: 2px solid $textUltraDarkGrey
+          @include transition
 
 .shop-container
   margin-top: 50px
@@ -721,7 +790,17 @@ input, textarea
         font-size: 22px
         padding: 5px
 
+.marker__container
+  display: flex
+  position: absolute
+  bottom: 20px
+  left: 50%
+  transform: translateX(-50%)
+  a
+    position: static
+    margin: 0 3px
 
+.sliderRing
+  &:hover
+    fill: $white
 
-
-        background-size: .625rem 3.125rem

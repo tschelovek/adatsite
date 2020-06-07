@@ -12,71 +12,113 @@
 <header class="header">
     <div class="header-firstline">
         <div class="container">
-            <ul class="loginNavigation">
-                <li><a href="#">MY ACCOUNT</a></li>
-                <li><a href="#">MY WISHLIST</a></li>
-                <li><a href="#">CHECKOUT</a></li>
-                <li><a href="#">LOG IN</a></li>
-                <li>OR</li>
-                <li><a href="#">REGISTER</a></li>
-            </ul>
-            <form method="get">
-                <label>
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                </label>
-            </form>
+            <div class="header-firstline__container">
+                <ul class="loginNavigation">
+                    <li><a href="#">MY ACCOUNT</a></li>
+                    <li><a href="#">MY WISHLIST</a></li>
+                    <li><a href="#">CHECKOUT</a></li>
+                    <li><a href="#">LOG IN</a></li>
+                    <li>OR</li>
+                    <li><a href="#">REGISTER</a></li>
+                </ul>
+                <!--            <form method="get">-->
+                <!--                <label>-->
+                <!--                    <input type="text">-->
+                <!--                    <input type="text">-->
+                <!--                    <input type="text">-->
+                <!--                </label>-->
+                <!--            </form>-->
+                <div class="region-pannel">
+                    <a href="#">US DOLLAR</a>
+                    <a href="#">ENGLISH</a>
+                    <a href="#">MY BAG: 0 ITEM(S)</a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container">
-        <div class="header-secondline">
-            <form method="get" class="searchForm">
-                <label>
-                    <input type="text" placeholder="Find it here..." alt="search bar">
-                    <button type="submit"><i class="fas fa-search"></i></button>
-                </label>
-            </form>
-            <nav class="mainNavigation">
-                <ul class="u_mainNavigation">
-                    <li><a href="#">FASHION</a></li>
-                    <li><a href="#">ELECTRONICS</a></li>
-                    <li><a href="#">GIFTS</a></li>
-                    <li><a href="#">BOOKS</a></li>
-                    <li><a href="#">AT HOME</a></li>
-                    <li><a href="#">MUSIC</a></li>
-                    <li><a href="#">SALE</a></li>
-                </ul>
-            </nav>
+        <div class="header__secondline">
             <div class="logo">
                 <a href="#">
                     <img src="img/logo1.png" alt="fengo logo"> FENGO
                 </a>
+            </div>
+            <div class="searchForm__container">
+                <form id="searchForm" method="get" class="searchForm" action="#">
+                    <label for="find"></label>
+                    <input id="find" type="text" placeholder="Find it here..." alt="search bar">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="mainNavigation__container">
+                <nav id="mainNavigation" class="mainNavigation">
+                    <ul class="u_mainNavigation">
+                        <li><a href="#">FASHION</a></li>
+                        <li><a href="#">ELECTRONICS</a></li>
+                        <li><a href="#">GIFTS</a></li>
+                        <li><a href="#">BOOKS</a></li>
+                        <li><a href="#">AT HOME</a></li>
+                        <li><a href="#">MUSIC</a></li>
+                        <li><a href="#">SALE</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
 </header>
 <body>
 <div class="sliderBig">
-
+    <div class="slider__container">
+        <div class="leftArrow"><a href="#" class="leftArrow"><i class="fas fa-arrow-circle-left"></i></a></div>
+        <div class="slider__text">
+            CHECK YOUR
+            <h3>AUTUMN <br>
+                STYLE</h3>
+            <span>ALL THE TRENDS YOU NEED <br>
+                    THIS SEASON</span><br>
+            <a href="#">READ IT NOW ›</a>
+        </div>
+        <div class="rightArrow"><a href="#"><i class="fas fa-arrow-circle-right"></i></a></div>
+        <div class="marker__container">
+            <a href="#" class="marker_link">
+                <svg width="14px" height="14px">
+                    <circle class="sliderRing" stroke="white" stroke-width="2" fill="transparent" r="5px"
+                            cx="7px"
+                            cy="7px"/>
+                </svg>
+            </a>
+            <a href="#" class="marker_link">
+                <svg width="14px" height="14px">
+                    <circle class="sliderRing" stroke="white" stroke-width="2" fill="transparent" r="5px"
+                            cx="7px"
+                            cy="7px"/>
+                </svg>
+            </a>
+            <a href="#" class="marker_link">
+                <svg width="14px" height="14px">
+                    <circle class="sliderRing" stroke="white" stroke-width="2" fill="transparent" r="5px"
+                            cx="7px"
+                            cy="7px"/>
+                </svg>
+            </a>
+        </div>
+    </div>
 </div>
 
 <section class="s_showcase">
     <div class="container">
         <div class="showcase">
             <div class="showcase__item1">
-<!--                <div class="showcase__item1__arrows">-->
-                    <div class="leftArrow"><a href="#" class="leftArrow"><i class="fas fa-arrow-circle-left"></i></a></div>
-                    <div class="showcase__item1__box">
-                        <div class="nameWithStripes1">
-                            <hr>
-                            <h3>EXCLUSIVE</h3>
-                            <hr>
-                        </div>
-                        DISCOUNT CODES & OFFERS
+                <div class="leftArrow"><a href="#" class="leftArrow"><i class="fas fa-arrow-circle-left"></i></a></div>
+                <div class="showcase__item1__box">
+                    <div class="nameWithStripes1">
+                        <hr>
+                        <h3>EXCLUSIVE</h3>
+                        <hr>
                     </div>
-                    <div class="rightArrow"><a href="#"><i class="fas fa-arrow-circle-right"></i></a></div>
-<!--                </div>-->
+                    DISCOUNT CODES & OFFERS
+                </div>
+                <div class="rightArrow"><a href="#"><i class="fas fa-arrow-circle-right"></i></a></div>
                 <a href="#">GET YOUR DISCOUNT ›</a>
             </div>
             <div class="showcase__item2">
@@ -106,18 +148,28 @@
                         <span>WOOMEN</span>
                         <hr>
                     </div>
+                    AUTUMN 2013
                 </div>
                 <a href="#">GET THE LOOK ›</a>
                 <div class="marker__container">
-                    <svg>
-                        <circle r="10px" cx="10px" cy="10px"/>
-                    </svg>
-                    <svg>
-                        <circle r="10px" cx="30px" cy="10px"/>
-                    </svg>
-                    <svg>
-                        <circle r="10px" cx="50px" cy="10px"/>
-                    </svg>
+                    <a href="#" class="marker_link">
+                        <svg width="14px" height="14px">
+                            <circle class="sliderRing" stroke="white" stroke-width="2" fill="transparent" r="5px"
+                                    cx="7px" cy="7px"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="marker_link">
+                        <svg width="14px" height="14px">
+                            <circle class="sliderRing" stroke="white" stroke-width="2" fill="transparent" r="5px"
+                                    cx="7px" cy="7px"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="marker_link">
+                        <svg width="14px" height="14px">
+                            <circle class="sliderRing" stroke="white" stroke-width="2" fill="transparent" r="5px"
+                                    cx="7px" cy="7px"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div class="showcase__item6">
