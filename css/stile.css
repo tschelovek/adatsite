@@ -223,6 +223,52 @@ input, textarea {
   fill: #FFFFFF;
 }
 
+.mobile__sliderBig {
+  display: none;
+  background: #cccccc;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.mobile__sliderBig a {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: myriadprobold, sans-serif;
+  color: #FFFFFF;
+  line-height: 1;
+  transform: translateX(-50%);
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  bottom: 20px;
+  left: 50%;
+}
+.mobile__sliderBig a:hover {
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  text-decoration: underline;
+}
+
+.mobile__sliderBig__container {
+  font-size: 18px;
+  font-weight: normal;
+  font-family: myriadprobold, sans-serif;
+  color: #FFFFFF;
+  line-height: 1;
+  margin-top: 10px;
+  border: 1px solid #dbdbdb;
+  padding: 0 20px 20px;
+  display: inline-block;
+}
+.mobile__sliderBig__container h3 {
+  font-size: 35px;
+  margin: 30px 5px 20px;
+}
+
 .s_showcase {
   background: #f6f6f6;
 }
@@ -1108,6 +1154,51 @@ input, textarea {
 
 .sliderRing:hover {
   fill: #FFFFFF;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    max-width: 440px;
+    margin: 0 auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .loginNavigation li:nth-child(4), .loginNavigation li :nth-child(5), .loginNavigation li :nth-child(6) {
+    display: none;
+  }
+
+  .nameWithStripesSlider {
+    display: flex;
+  }
+  .nameWithStripesSlider hr {
+    width: 15px;
+    transform: translateY(48px);
+    border: 2px solid #FFFFFF;
+  }
+
+  .sliderBig {
+    display: none;
+  }
+
+  .mobile__sliderBig {
+    display: flex;
+  }
+
+  .mobile__sliderBig__container {
+    margin-top: 10px;
+  }
+
+  .showcase {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .showcase__item1, .showcase__item2, .showcase__item3, .showcase__item4, .showcase__item5, .showcase__item6 {
+    margin-top: 10px;
+    max-width: 440px;
+  }
 }
 
 /*# sourceMappingURL=stile.css.map */

@@ -84,6 +84,7 @@ a
 input, textarea
   outline: none
 
+@media (max-width: 1200px)
 .container
   max-width: 1170px
   margin: 0 auto
@@ -99,14 +100,11 @@ input, textarea
 
 .loginNavigation
   display: flex
-
   li
     margin: 0 10px
     @include font($color: $textLightGrey, $size: $fs11)
-
     &:nth-child(5)
       margin: 0
-
     a
       @include font($color: $textLightGrey, $size: $fs11)
 
@@ -213,10 +211,36 @@ input, textarea
       color: $white
       text-decoration: underline
 
-
 .sliderRing
   &:hover
     fill: $white
+
+.mobile__sliderBig
+  display: none
+  background: $bgGrey
+  margin: 0 auto
+  width: 100%
+  text-align: center
+  position: relative
+  a
+    @include font($color: $white, $family: $bold, $size: $fs14)
+    transform: translateX(-50%)
+    @include transition
+    bottom: 20px
+    left: 50%
+    &:hover
+      @include transition
+      text-decoration: underline
+
+.mobile__sliderBig__container
+  @include font($color: $white, $family: $bold, $size: $fs18)
+  margin-top: 10px
+  border: 1px solid $almostWhite
+  padding: 0 20px 20px
+  display: inline-block
+  h3
+    font-size: $fs35
+    margin: 30px 5px 20px
 
 .s_showcase
   background: #f6f6f6
@@ -803,4 +827,34 @@ input, textarea
 .sliderRing
   &:hover
     fill: $white
+
+@media (max-width: 1200px)
+
+@media only screen and (min-width: 320px) and (max-width: 480px)
+  .container
+    max-width: 440px
+    margin: 0 auto
+    @include box-sizing
+  .loginNavigation
+    li
+      &:nth-child(4), :nth-child(5), :nth-child(6)
+        display: none
+  .nameWithStripesSlider
+    display: flex
+    hr
+      width: 15px
+      transform: translateY(48px)
+      border: 2px solid $white
+  .sliderBig
+    display: none
+  .mobile__sliderBig
+    display: flex
+  .mobile__sliderBig__container
+    margin-top: 10px
+  .showcase
+    display: flex
+    flex-direction: column
+  .showcase__item1, .showcase__item2, .showcase__item3, .showcase__item4, .showcase__item5, .showcase__item6
+    margin-top: 10px
+    max-width: 440px
 
