@@ -10,650 +10,662 @@
     <style type="text/css">
     </style>
 </head>
-<header class="header">
-    <div class="header-firstline">
+<body>
+<div class="wrapper">
+
+    <header class="header">
         <div class="container">
-            <div class="header-firstline__container">
-                <ul class="loginNavigation">
-                    <li><a href="#">MY ACCOUNT</a></li>
-                    <li><a href="#">MY WISHLIST</a></li>
-                    <li><a href="#">CHECKOUT</a></li>
-                    <li><a href="#">LOG IN</a></li>
-                    <li>OR</li>
-                    <li><a href="#">REGISTER</a></li>
-                </ul>
-                <!--            <form method="get">-->
-                <!--                <label>-->
-                <!--                    <input type="text">-->
-                <!--                    <input type="text">-->
-                <!--                    <input type="text">-->
-                <!--                </label>-->
-                <!--            </form>-->
-                <div class="region-pannel">
-                    <a href="#">US DOLLAR</a>
-                    <a href="#">ENGLISH</a>
-                    <a href="#">MY BAG: 0 ITEM(S)</a>
+            <div class="header-firstline">
+                <div class="container">
+                    <div class="headerNav__container">
+                        <ul class="loginNavigation">
+                            <li><a href="#">MY ACCOUNT</a></li>
+                            <li><a href="#">MY WISHLIST</a></li>
+                            <li><a href="#">CHECKOUT</a></li>
+                        </ul>
+                        <ul class="login">
+                            <li><a href="#">LOG IN</a></li>
+                            <li>OR</li>
+                            <li><a href="#">REGISTER</a></li>
+                        </ul>
+                        <div class="cartAndRegion-panel">
+                            <a href="#">US DOLLAR</a>
+                            <a href="#">ENGLISH</a>
+                            <a href="#">MY BAG: 0 ITEM(S)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__secondline">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logo1.png" alt="fengo logo"> FENGO
+                    </a>
+                </div>
+                <div class="searchForm__container">
+                    <form id="searchForm" method="get" class="searchForm" action="#">
+                        <label for="find"></label>
+                        <input id="find" type="text" placeholder="Find it here..." alt="search bar">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="mainNavigation__container">
+                    <nav id="mainNavigation" class="mainNavigation">
+                        <ul class="u_mainNavigation">
+                            <li><a href="#">FASHION</a></li>
+                            <li><a href="#">ELECTRONICS</a></li>
+                            <li><a href="#">GIFTS</a></li>
+                            <li><a href="#">BOOKS</a></li>
+                            <li><a href="#">AT HOME</a></li>
+                            <li><a href="#">MUSIC</a></li>
+                            <li><a href="#">SALE</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="cart__mobile">
+                    <a href="#">
+                        <i class="fas fa-shopping-basket"></i> $0.00
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="header__secondline">
-            <div class="logo">
-                <a href="#">
-                    <img src="img/logo1.png" alt="fengo logo"> FENGO
+    </header>
+
+    <div class="sliderBig">
+        <div class="slider__container">
+            <div class="leftArrow"><a href="#" class="leftArrow"><i class="fas fa-arrow-circle-left"></i></a></div>
+            <div class="slider__text">
+                CHECK YOUR
+                <h3>AUTUMN <br>
+                    STYLE</h3>
+                <span>ALL THE TRENDS YOU NEED <br>
+                    THIS SEASON</span><br>
+                <a href="#">READ IT NOW ›</a>
+            </div>
+            <div class="rightArrow"><a href="#"><i class="fas fa-arrow-circle-right"></i></a></div>
+            <div class="marker__container">
+                <a href="#" class="marker_link">
+                    <svg width="14px" height="14px">
+                        <circle class="sliderRing" stroke="white" stroke-width="2" fill="transparent" r="5px"
+                                cx="7px"
+                                cy="7px"/>
+                    </svg>
+                </a>
+                <a href="#" class="marker_link">
+                    <svg width="14px" height="14px">
+                        <circle class="sliderRing" stroke="white" stroke-width="2" fill="transparent" r="5px"
+                                cx="7px"
+                                cy="7px"/>
+                    </svg>
+                </a>
+                <a href="#" class="marker_link">
+                    <svg width="14px" height="14px">
+                        <circle class="sliderRing" stroke="white" stroke-width="2" fill="transparent" r="5px"
+                                cx="7px"
+                                cy="7px"/>
+                    </svg>
                 </a>
             </div>
-            <div class="searchForm__container">
-                <form id="searchForm" method="get" class="searchForm" action="#">
-                    <label for="find"></label>
-                    <input id="find" type="text" placeholder="Find it here..." alt="search bar">
-                    <button type="submit"><i class="fas fa-search"></i></button>
-                </form>
-            </div>
-            <div class="mainNavigation__container">
-                <nav id="mainNavigation" class="mainNavigation">
-                    <ul class="u_mainNavigation">
-                        <li><a href="#">FASHION</a></li>
-                        <li><a href="#">ELECTRONICS</a></li>
-                        <li><a href="#">GIFTS</a></li>
-                        <li><a href="#">BOOKS</a></li>
-                        <li><a href="#">AT HOME</a></li>
-                        <li><a href="#">MUSIC</a></li>
-                        <li><a href="#">SALE</a></li>
-                    </ul>
-                </nav>
-            </div>
         </div>
     </div>
-</header>
-<body>
-<div class="sliderBig">
-    <div class="slider__container">
-        <div class="leftArrow"><a href="#" class="leftArrow"><i class="fas fa-arrow-circle-left"></i></a></div>
-        <div class="slider__text">
-            CHECK YOUR
-            <h3>AUTUMN <br>
-                STYLE</h3>
-            <span>ALL THE TRENDS YOU NEED <br>
-                    THIS SEASON</span><br>
-            <a href="#">READ IT NOW ›</a>
-        </div>
-        <div class="rightArrow"><a href="#"><i class="fas fa-arrow-circle-right"></i></a></div>
-        <div class="marker__container">
-            <a href="#" class="marker_link">
-                <svg width="14px" height="14px">
-                    <circle class="sliderRing" stroke="white" stroke-width="2" fill="transparent" r="5px"
-                            cx="7px"
-                            cy="7px"/>
-                </svg>
-            </a>
-            <a href="#" class="marker_link">
-                <svg width="14px" height="14px">
-                    <circle class="sliderRing" stroke="white" stroke-width="2" fill="transparent" r="5px"
-                            cx="7px"
-                            cy="7px"/>
-                </svg>
-            </a>
-            <a href="#" class="marker_link">
-                <svg width="14px" height="14px">
-                    <circle class="sliderRing" stroke="white" stroke-width="2" fill="transparent" r="5px"
-                            cx="7px"
-                            cy="7px"/>
-                </svg>
-            </a>
+
+    <div class="mobile__sliderBig">
+        <div class="mobile__sliderBig__container">
+            <div class="nameWithStripesSlider">
+                <hr>
+                <h3>YOU PAY LESS</h3>
+                <hr>
+            </div>
+            <p>EVERYONE ELSE PAYS ATTENTION</p>
+            <a href="#">GET YOUR DISCOUNT ›</a>
         </div>
     </div>
-</div>
-<div class="mobile__sliderBig">
-    <div class="mobile__sliderBig__container">
-        <div class="nameWithStripesSlider">
+
+    <section class="s_showcase">
+        <div class="container">
+            <div class="showcase">
+                <div class="showcase__item1">
+                    <div class="leftArrow"><a href="#" class="leftArrow"><i class="fas fa-arrow-circle-left"></i></a>
+                    </div>
+                    <div class="showcase__item1__box">
+                        <div class="nameWithStripes1">
+                            <hr>
+                            <h3>EXCLUSIVE</h3>
+                            <hr>
+                        </div>
+                        <p>DISCOUNT CODES & OFFERS</p>
+                    </div>
+                    <div class="rightArrow"><a href="#"><i class="fas fa-arrow-circle-right"></i></a></div>
+                    <a href="#">GET YOUR DISCOUNT ›</a>
+                </div>
+                <div class="showcase__item2">
+                    <div class="showcase__item2__box">
+                        <span>the</span>
+                        <div class="nameWithStripes2">
+                            <hr>
+                            <h3>HOTTEST STYLES</h3>
+                            <hr>
+                        </div>
+                        <p>ARE HERE</p>
+                    </div>
+                    <a href="#">WATCH NOW ›</a>
+                </div>
+                <div class="showcase__item3">
+                    <div class="showcase__item3__box">
+                        <h3>JEWELRY</h3>
+                        EVERY THIRD ITEM IS FREE!
+                    </div>
+                    <a href="#">WATCH NOW ›</a>
+                </div>
+                <div class="showcase__item4">
+                    <div class="showcase__item4__box">
+                        <h3>LOOKBOOK</h3>
+                        <div class="nameWithStripes4">
+                            <hr>
+                            <span>WOOMEN</span>
+                            <hr>
+                        </div>
+                        AUTUMN 2013
+                    </div>
+                    <a href="#">GET THE LOOK ›</a>
+                    <div class="marker__container">
+                        <a href="#" class="marker_link">
+                            <svg width="14px" height="14px">
+                                <circle class="sliderRing" stroke="white" stroke-width="2" fill="transparent" r="5px"
+                                        cx="7px" cy="7px"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="marker_link">
+                            <svg width="14px" height="14px">
+                                <circle class="sliderRing" stroke="white" stroke-width="2" fill="transparent" r="5px"
+                                        cx="7px" cy="7px"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="marker_link">
+                            <svg width="14px" height="14px">
+                                <circle class="sliderRing" stroke="white" stroke-width="2" fill="transparent" r="5px"
+                                        cx="7px" cy="7px"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="showcase__item6">
+                    <div class="showcase__item6__box">
+                        <div class="nameWithStripes6">
+                            <hr>
+                            <h3>ACCESSORIES</h3>
+                            <hr>
+                        </div>
+                        <p>COMPLETE YOUR STYLE</p>
+                    </div>
+                    <a href="#">GET THE LOOK ›</a>
+                </div>
+                <div class="showcase__item5">
+                    <p>WHAT'S NEW?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s_shop container">
+        <nav class="shop-navigation">
+            <ul>
+                <li><a href="#">NEW ARRIVALS</a></li>
+                <li><a href="#">FEATURED</a></li>
+                <li><a href="#">SPECIAL</a></li>
+                <li><a href="#">BESTSELLERS</a></li>
+            </ul>
+        </nav>
+        <div class="shop-container">
+            <div class="shop-item">
+                <img src="img/item.png" alt="item picture">
+                <div class="description">
+                    <div class="namePrice">
+                        <div class="name">Carded Cotton Shawlbr<br>
+                            Cardigan
+                        </div>
+                        <div class="cost">
+                            $187
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <div class="buy__cartInfo">
+                            <a href="#" class="buyLink">ADD TO BAG</a>
+                            <a href="#" class="buyLink">MORE INFO</a>
+                        </div>
+                        <div class="buy__wish">
+                            <a href="#" class="buyLink">+ Add to Wishlist</a>
+                            <a href="#" class="buyLink">+ Add to Compare</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="shop-item">
+                <img src="img/item.png" alt="item picture">
+                <div class="description">
+                    <div class="namePrice">
+                        <div class="name">Shetland Wool Full-Zip<br>
+                            Sweater
+                        </div>
+                        <div class="cost">
+                            <span>$180</span>
+                            $110
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <div class="buy__cartInfo">
+                            <a href="#" class="buyLink">ADD TO BAG</a>
+                            <a href="#" class="buyLink">MORE INFO</a>
+                        </div>
+                        <div class="buy__wish">
+                            <a href="#" class="buyLink">+ Add to Wishlist</a>
+                            <a href="#" class="buyLink">+ Add to Compare</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="shop-item">
+                <img src="img/item.png" alt="item picture">
+                <div class="description">
+                    <div class="namePrice">
+                        <div class="name">Mustard Yellow Ruffle<br>
+                            White Shirt
+                        </div>
+                        <div class="cost">
+                            $478
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <div class="buy__cartInfo">
+                            <a href="#" class="buyLink">ADD TO BAG</a>
+                            <a href="#" class="buyLink">MORE INFO</a>
+                        </div>
+                        <div class="buy__wish">
+                            <a href="#" class="buyLink">+ Add to Wishlist</a>
+                            <a href="#" class="buyLink">+ Add to Compare</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="shop-item">
+                <img src="img/item.png" alt="item picture">
+                <div class="description">
+                    <div class="namePrice">
+                        <div class="name">FineCustom-Fit Poplin<br>
+                            Regent
+                        </div>
+                        <div class="cost">
+                            $1150
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <div class="buy__cartInfo">
+                            <a href="#" class="buyLink">ADD TO BAG</a>
+                            <a href="#" class="buyLink">MORE INFO</a>
+                        </div>
+                        <div class="buy__wish">
+                            <a href="#" class="buyLink">+ Add to Wishlist</a>
+                            <a href="#" class="buyLink">+ Add to Compare</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="shop-item">
+                <img src="img/item.png" alt="item picture">
+                <div class="description">
+                    <div class="namePrice">
+                        <div class="name">Carded Cotton Shawl<br>
+                            Cardigan
+                        </div>
+                        <div class="cost">
+                            $248
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <div class="buy__cartInfo">
+                            <a href="#" class="buyLink">ADD TO BAG</a>
+                            <a href="#" class="buyLink">MORE INFO</a>
+                        </div>
+                        <div class="buy__wish">
+                            <a href="#" class="buyLink">+ Add to Wishlist</a>
+                            <a href="#" class="buyLink">+ Add to Compare</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="shop-item">
+                <img src="img/item.png" alt="item picture">
+                <div class="description">
+                    <div class="namePrice">
+                        <div class="name">Shetland Wool Full-Zip<br>
+                            Sweater
+                        </div>
+                        <div class="cost">
+                            $657
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <div class="buy__cartInfo">
+                            <a href="#" class="buyLink">ADD TO BAG</a>
+                            <a href="#" class="buyLink">MORE INFO</a>
+                        </div>
+                        <div class="buy__wish">
+                            <a href="#" class="buyLink">+ Add to Wishlist</a>
+                            <a href="#" class="buyLink">+ Add to Compare</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="shop-item">
+                <img src="img/item.png" alt="item picture">
+                <div class="description">
+                    <div class="namePrice">
+                        <div class="name">Mustard Yellow Ruffle<br>
+                            White Shirt
+                        </div>
+                        <div class="cost">
+                            <span>321</span>
+                            $214
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <div class="buy__cartInfo">
+                            <a href="#" class="buyLink">ADD TO BAG</a>
+                            <a href="#" class="buyLink">MORE INFO</a>
+                        </div>
+                        <div class="buy__wish">
+                            <a href="#" class="buyLink">+ Add to Wishlist</a>
+                            <a href="#" class="buyLink">+ Add to Compare</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="shop-item">
+                <img src="img/item.png" alt="item picture">
+                <div class="description">
+                    <div class="namePrice">
+                        <div class="name">FineCustom-Fit Poplin<br>
+                            Regent
+                        </div>
+                        <div class="cost">
+                            $147
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <div class="buy__cartInfo">
+                            <a href="#" class="buyLink">ADD TO BAG</a>
+                            <a href="#" class="buyLink">MORE INFO</a>
+                        </div>
+                        <div class="buy__wish">
+                            <a href="#" class="buyLink">+ Add to Wishlist</a>
+                            <a href="#" class="buyLink">+ Add to Compare</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="s_showMore">
             <hr>
-            <h3>YOU PAY LESS</h3>
+            <a href="#" class="shopMore">SHOW MORE</a>
             <hr>
         </div>
-        <p>EVERYONE ELSE PAYS ATTENTION</p>
-        <a href="#">GET YOUR DISCOUNT ›</a>
-    </div>
-</div>
+    </section>
 
-<section class="s_showcase">
-    <div class="container">
-        <div class="showcase">
-            <div class="showcase__item1">
-                <div class="leftArrow"><a href="#" class="leftArrow"><i class="fas fa-arrow-circle-left"></i></a></div>
-                <div class="showcase__item1__box">
-                    <div class="nameWithStripes1">
-                        <hr>
-                        <h3>EXCLUSIVE</h3>
-                        <hr>
-                    </div>
-                    DISCOUNT CODES & OFFERS
-                </div>
-                <div class="rightArrow"><a href="#"><i class="fas fa-arrow-circle-right"></i></a></div>
-                <a href="#">GET YOUR DISCOUNT ›</a>
-            </div>
-            <div class="showcase__item2">
-                <div class="showcase__item2__box">
-                    <span>the</span>
-                    <div class="nameWithStripes2">
-                        <hr>
-                        <h3>HOTTEST STYLES</h3>
-                        <hr>
-                    </div>
-                    ARE HERE
-                </div>
-                <a href="#">WATCH NOW ›</a>
-            </div>
-            <div class="showcase__item3">
-                <div class="showcase__item3__box">
-                    <h3>JEWELRY</h3>
-                    EVERY THIRD ITEM IS FREE!
-                </div>
-                <a href="#">WATCH NOW ›</a>
-            </div>
-            <div class="showcase__item4">
-                <div class="showcase__item4__box">
-                    <h3>LOOKBOOK</h3>
-                    <div class="nameWithStripes4">
-                        <hr>
-                        <span>WOOMEN</span>
-                        <hr>
-                    </div>
-                    AUTUMN 2013
-                </div>
-                <a href="#">GET THE LOOK ›</a>
-                <div class="marker__container">
-                    <a href="#" class="marker_link">
-                        <svg width="14px" height="14px">
-                            <circle class="sliderRing" stroke="white" stroke-width="2" fill="transparent" r="5px"
-                                    cx="7px" cy="7px"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="marker_link">
-                        <svg width="14px" height="14px">
-                            <circle class="sliderRing" stroke="white" stroke-width="2" fill="transparent" r="5px"
-                                    cx="7px" cy="7px"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="marker_link">
-                        <svg width="14px" height="14px">
-                            <circle class="sliderRing" stroke="white" stroke-width="2" fill="transparent" r="5px"
-                                    cx="7px" cy="7px"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="showcase__item6">
-                <div class="showcase__item6__box">
-                    <div class="nameWithStripes6">
-                        <hr>
-                        <h3>ACCESSORIES</h3>
-                        <hr>
-                    </div>
-                    COMPLETE YOUR STYLE
-                </div>
-                <a href="#">GET THE LOOK ›</a>
-            </div>
-            <div class="showcase__item5">
-                <p>WHAT'S NEW?</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="s_shop container">
-    <nav class="shop-navigation">
-        <ul>
-            <li><a href="#">NEW ARRIVALS</a></li>
-            <li><a href="#">FEATURED</a></li>
-            <li><a href="#">SPECIAL</a></li>
-            <li><a href="#">BESTSELLERS</a></li>
-        </ul>
-    </nav>
-    <div class="shop-container">
-        <div class="shop-item">
-            <img src="img/item.png" alt="item picture">
-            <div class="description">
-                <div class="namePrice">
-                    <div class="name">Carded Cotton Shawlbr<br>
-                        Cardigan
-                    </div>
-                    <div class="cost">
-                        $187
-                    </div>
-                </div>
-                <div class="buy">
-                    <div class="buy__cartInfo">
-                        <a href="#" class="buyLink">ADD TO BAG</a>
-                        <a href="#" class="buyLink">MORE INFO</a>
-                    </div>
-                    <div class="buy__wish">
-                        <a href="#" class="buyLink">+ Add to Wishlist</a>
-                        <a href="#" class="buyLink">+ Add to Compare</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="shop-item">
-            <img src="img/item.png" alt="item picture">
-            <div class="description">
-                <div class="namePrice">
-                    <div class="name">Shetland Wool Full-Zip<br>
-                        Sweater
-                    </div>
-                    <div class="cost">
-                        <span>$180</span>
-                        $110
-                    </div>
-                </div>
-                <div class="buy">
-                    <div class="buy__cartInfo">
-                        <a href="#" class="buyLink">ADD TO BAG</a>
-                        <a href="#" class="buyLink">MORE INFO</a>
-                    </div>
-                    <div class="buy__wish">
-                        <a href="#" class="buyLink">+ Add to Wishlist</a>
-                        <a href="#" class="buyLink">+ Add to Compare</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="shop-item">
-            <img src="img/item.png" alt="item picture">
-            <div class="description">
-                <div class="namePrice">
-                    <div class="name">Mustard Yellow Ruffle<br>
-                        White Shirt
-                    </div>
-                    <div class="cost">
-                        $478
-                    </div>
-                </div>
-                <div class="buy">
-                    <div class="buy__cartInfo">
-                        <a href="#" class="buyLink">ADD TO BAG</a>
-                        <a href="#" class="buyLink">MORE INFO</a>
-                    </div>
-                    <div class="buy__wish">
-                        <a href="#" class="buyLink">+ Add to Wishlist</a>
-                        <a href="#" class="buyLink">+ Add to Compare</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="shop-item">
-            <img src="img/item.png" alt="item picture">
-            <div class="description">
-                <div class="namePrice">
-                    <div class="name">FineCustom-Fit Poplin<br>
-                        Regent
-                    </div>
-                    <div class="cost">
-                        $1150
-                    </div>
-                </div>
-                <div class="buy">
-                    <div class="buy__cartInfo">
-                        <a href="#" class="buyLink">ADD TO BAG</a>
-                        <a href="#" class="buyLink">MORE INFO</a>
-                    </div>
-                    <div class="buy__wish">
-                        <a href="#" class="buyLink">+ Add to Wishlist</a>
-                        <a href="#" class="buyLink">+ Add to Compare</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="shop-item">
-            <img src="img/item.png" alt="item picture">
-            <div class="description">
-                <div class="namePrice">
-                    <div class="name">Carded Cotton Shawl<br>
-                        Cardigan
-                    </div>
-                    <div class="cost">
-                        $248
-                    </div>
-                </div>
-                <div class="buy">
-                    <div class="buy__cartInfo">
-                        <a href="#" class="buyLink">ADD TO BAG</a>
-                        <a href="#" class="buyLink">MORE INFO</a>
-                    </div>
-                    <div class="buy__wish">
-                        <a href="#" class="buyLink">+ Add to Wishlist</a>
-                        <a href="#" class="buyLink">+ Add to Compare</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="shop-item">
-            <img src="img/item.png" alt="item picture">
-            <div class="description">
-                <div class="namePrice">
-                    <div class="name">Shetland Wool Full-Zip<br>
-                        Sweater
-                    </div>
-                    <div class="cost">
-                        $657
-                    </div>
-                </div>
-                <div class="buy">
-                    <div class="buy__cartInfo">
-                        <a href="#" class="buyLink">ADD TO BAG</a>
-                        <a href="#" class="buyLink">MORE INFO</a>
-                    </div>
-                    <div class="buy__wish">
-                        <a href="#" class="buyLink">+ Add to Wishlist</a>
-                        <a href="#" class="buyLink">+ Add to Compare</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="shop-item">
-            <img src="img/item.png" alt="item picture">
-            <div class="description">
-                <div class="namePrice">
-                    <div class="name">Mustard Yellow Ruffle<br>
-                        White Shirt
-                    </div>
-                    <div class="cost">
-                        <span>321</span>
-                        $214
-                    </div>
-                </div>
-                <div class="buy">
-                    <div class="buy__cartInfo">
-                        <a href="#" class="buyLink">ADD TO BAG</a>
-                        <a href="#" class="buyLink">MORE INFO</a>
-                    </div>
-                    <div class="buy__wish">
-                        <a href="#" class="buyLink">+ Add to Wishlist</a>
-                        <a href="#" class="buyLink">+ Add to Compare</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="shop-item">
-            <img src="img/item.png" alt="item picture">
-            <div class="description">
-                <div class="namePrice">
-                    <div class="name">FineCustom-Fit Poplin<br>
-                        Regent
-                    </div>
-                    <div class="cost">
-                        $147
-                    </div>
-                </div>
-                <div class="buy">
-                    <div class="buy__cartInfo">
-                        <a href="#" class="buyLink">ADD TO BAG</a>
-                        <a href="#" class="buyLink">MORE INFO</a>
-                    </div>
-                    <div class="buy__wish">
-                        <a href="#" class="buyLink">+ Add to Wishlist</a>
-                        <a href="#" class="buyLink">+ Add to Compare</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="s_showMore">
-        <hr>
-        <a href="#" class="shopMore">SHOW MORE</a>
-        <hr>
-    </div>
-</section>
-</body>
-
-<footer class="footer">
-    <div class="container">
-        <div class="columnContainer">
-            <div class="footer__column_first">
-                <article class="aboutFengo">
-                    <h3>about fengo shop</h3>
-                    <div class="aboutFengo__container">
-                        <img src="img/1/180х180.png" alt="Fengo shop">
-                        <div class="aboutFengo__text">
-                            <p>Morbi pretium odio in dapibus varius. Integer sagittis, tellus ac venenatis venenatis,
-                                ipsum ligula auctor lectus,suscipit velit quam quis turpis. Fusce scelerisque aliquet
+    <footer class="footer">
+        <div class="container">
+            <div class="columnContainer">
+                <div class="footer__column_first">
+                    <article class="aboutFengo">
+                        <h3>about fengo shop</h3>
+                        <div class="aboutFengo__container">
+                            <p><img src="img/1/180х180.png" alt="Fengo shop">Morbi pretium odio in dapibus varius. Integer sagittis, tellus ac venenatis
+                                venenatis,
+                                ipsum ligula auctor lectus,suscipit velit quam quis turpis. Fusce scelerisque
+                                aliquet
                                 commodo. Sed lobortis laoreet risus vitae tincidunt. Ut consectetur nec purus in
-                                egestas. Pellentesque vehicula urna purus.</p>
-                            <a href="#" class="footerLink">READ MORE &rsaquo;</a>
+                                egestas. Pellentesque vehicula urna purus. <br>
+                                <a href="#" class="footerLink">READ MORE &rsaquo;</a>
+                            </p>
+                        </div>
+                    </article>
+                    <div class="blogLinks">
+                        <div class="miniHeader_arrows">
+                            <h3>From the blog</h3>
+                            <div class="arrowsContainer"><a href="#"><i class="fas fa-arrow-circle-left"></i></a>
+                                <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogLinks__container">
+                            <div class="blogLinksItem1">
+                                <img src="img/1/205х105.png" alt="item picture">
+                                <a href="#">
+                                    <p>Pellentesque vehiculabr <br> urna purus</p>
+                                </a>
+                            </div>
+                            <div class="blogLinksItem2">
+                                <img src="img/1/205х105.png" alt="item picture">
+                                <a href="#">
+                                    <p>Curabitur faucibus aliquam <br>felis quis</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </article>
-                <div class="blogLinks">
-                    <div class="miniHeader_arrows">
-                        <h3>From the blog</h3>
-                        <div class="arrowsContainer"><a href="#"><i class="fas fa-arrow-circle-left"></i></a>
-                            <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+                    <div class="quickContact">
+                        <h3>Quick Contact</h3>
+                        <div class="quickContact__container">
+                            <img src="img/1/map.png" alt="map">
+                            <form id="quickContact" method="get" action="#" class="quickContact__form">
+                                <label for="quickName"></label>
+                                <input id="quickName" type="text" placeholder="ENTER YOUR NAME">
+                                <label for="quickEmail"></label>
+                                <input id="quickEmail" type="email" placeholder="ENTER YOUR E-MAIL">
+                                <label for="quickMassage"></label>
+                                <textarea id="quickMassage" cols="25" rows="8" placeholder="ENTER YOUR MASSAGE"
+                                          maxlength="1000"></textarea>
+                                <a href="#" class="footerLink">send message &rsaquo;</a>
+                            </form>
                         </div>
                     </div>
-                    <div class="blogLinks__container">
-                        <div class="blogLinksItem">
-                            <img src="img/1/205х105.png" alt="item picture">
-                            <a href="#">
-                                <p>Pellentesque vehiculabr <br> urna purus</p>
-                            </a>
-                        </div>
-                        <div class="blogLinksItem">
-                            <img src="img/1/205х105.png" alt="item picture">
-                            <a href="#">
-                                <p>Curabitur faucibus aliquam <br>felis quis</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="quickContact">
-                    <h3>Quick Contact</h3>
-                    <div class="quickContact__container">
-                        <img src="img/1/map.png" alt="map">
-                        <form id="quickContact" method="get" action="#" class="quickContact__form">
-                            <label for="quickName"></label>
-                            <input id="quickName" type="text" placeholder="ENTER YOUR NAME">
-                            <label for="quickEmail"></label>
-                            <input id="quickEmail" type="email" placeholder="ENTER YOUR E-MAIL">
-                            <label for="quickMassage"></label>
-                            <textarea id="quickMassage" cols="25" rows="8" placeholder="ENTER YOUR MASSAGE"
-                                      maxlength="1000"></textarea>
-                            <a href="#" class="footerLink">send message &rsaquo;</a>
+                    <div class="subscribeForm">
+                        <form id="subscribeForm" method="get" action="#">
+                            <label for="subscribe"></label>
+                            <input id="subscribe" type="email" placeholder="ENTER YOUR E-MAIL FOR STAY IN THE KNOW">
+                            <button type="submit">&rsaquo;</button>
                         </form>
                     </div>
                 </div>
-                <div class="subscribeForm">
-                    <form id="subscribeForm" method="get" action="#">
-                        <label for="subscribe"></label>
-                        <input id="subscribe" type="email" placeholder="ENTER YOUR E-MAIL FOR STAY IN THE KNOW">
-                        <button type="submit">&rsaquo;</button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer__column_second">
-                <div class="mostFavorite">
-                    <div class="miniHeader_arrows">
-                        <h3>Most Favorite</h3>
-                        <div class="arrowsContainer"><a href="#"><i class="fas fa-arrow-circle-left"></i></a>
-                            <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="miniItems__container">
-                        <div class="shop-miniItem">
-                            <a href="#">
-                                <img src="img/1/150x195.png" alt="item picture">
-                                <div class="namePrice_miniItem">
-                                    <div class="shop-miniItem__name">Black puplum waist tie kudu dress
-                                    </div>
-                                    <div class="cost_miniItem">
-                                        $478
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="shop-miniItem">
-                            <a href="#">
-                                <img src="img/1/150x195.png" alt="item picture">
-                                <div class="namePrice_miniItem">
-                                    <div class="shop-miniItem__name">Black puplum waist tie kudu dress
-                                    </div>
-                                    <div class="cost_miniItem">
-                                        $478
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="twitter">
-                    <div class="miniHeader__button">
-                        <h3>TWITTER</h3>
-                        <a href="#" class="miniButton">FOLLOW</a>
-                    </div>
-                    <div class="twitter__container">
-                        <div class="twitter__name">
-                            <img src="img/1/promo.png" alt="promo picture">
-                            <div class="twitter__name__link">
-                                Promokit <br>
-                                <span>@marek_mnishek</span>
+                <div class="footer__column_second">
+                    <div class="mostFavorite">
+                        <div class="miniHeader_arrows">
+                            <h3>Most Favorite</h3>
+                            <div class="arrowsContainer"><a href="#"><i class="fas fa-arrow-circle-left"></i></a>
+                                <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
-                        <div class="twitter__post">
-                            <p>Vivamus id quam quis velit semper adipiscing nec in libero. Praesent quis lectus at justo
-                                ornare laoreet.
-                                Proin luctus viverra bit.ly/1byZ6QM</p>
-                        </div>
-                        <div class="twitter__links">
-                            <p>9 October 2013</p>
-                            <ul>
-                                <li><a href="#"><i class="fas fa-reply"></i> Reply</a></li>
-                                <li><a href="#"><i class="fas fa-retweet"></i> Retweet</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="twitter__container">
-                        <div class="twitter__name">
-                            <img src="img/1/promo.png" alt="promo picture">
-                            <div class="twitter__name__link">
-                                Promokit <br>
-                                <span>@marek_mnishek</span>
+                        <div class="miniItems__container">
+                            <div class="shop-miniItem1">
+                                <a href="#">
+                                    <img src="img/1/150x195.png" alt="item picture">
+                                    <div class="namePrice_miniItem">
+                                        <div class="shop-miniItem__name">Black puplum waist tie kudu dress
+                                        </div>
+                                        <div class="cost_miniItem">
+                                            $478
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="shop-miniItem2">
+                                <a href="#">
+                                    <img src="img/1/150x195.png" alt="item picture">
+                                    <div class="namePrice_miniItem">
+                                        <div class="shop-miniItem__name">Black puplum waist tie kudu dress
+                                        </div>
+                                        <div class="cost_miniItem">
+                                            $478
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                        <div class="twitter__post">
-                            <p>We’ve just finished and released our new eCommerce PSD template "Venedor" More details
-                                here: bit.ly/19SYsM6</p>
+                    </div>
+                    <div class="twitter">
+                        <div class="miniHeader__button">
+                            <h3>TWITTER</h3>
+                            <a href="#" class="miniButton">FOLLOW</a>
                         </div>
-                        <div class="twitter__links">
-                            <p>28 October 2013</p>
-                            <ul>
-                                <li><a href="#"><i class="fas fa-reply"></i> Reply</a></li>
-                                <li><a href="#"><i class="fas fa-retweet"></i> Retweet</a></li>
-                            </ul>
+                        <div class="twitter__container1">
+                            <div class="twitter__name">
+                                <img src="img/1/promo.png" alt="promo picture">
+                                <div class="twitter__name__link">
+                                    Promokit <br>
+                                    <span>@marek_mnishek</span>
+                                </div>
+                            </div>
+                            <div class="twitter__post">
+                                <p>Vivamus id quam quis velit semper adipiscing nec in libero. Praesent quis lectus at
+                                    justo
+                                    ornare laoreet.
+                                    Proin luctus viverra bit.ly/1byZ6QM</p>
+                            </div>
+                            <div class="twitter__links">
+                                <p>9 October 2013</p>
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-reply"></i> Reply</a></li>
+                                    <li><a href="#"><i class="fas fa-retweet"></i> Retweet</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="twitter__container2">
+                            <div class="twitter__name">
+                                <img src="img/1/promo.png" alt="promo picture">
+                                <div class="twitter__name__link">
+                                    Promokit <br>
+                                    <span>@marek_mnishek</span>
+                                </div>
+                            </div>
+                            <div class="twitter__post">
+                                <p>We’ve just finished and released our new eCommerce PSD template "Venedor" More
+                                    details
+                                    here: bit.ly/19SYsM6</p>
+                            </div>
+                            <div class="twitter__links">
+                                <p>28 October 2013</p>
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-reply"></i> Reply</a></li>
+                                    <li><a href="#"><i class="fas fa-retweet"></i> Retweet</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="facebook">
+                        <div class="miniHeader__button">
+                            <h3>facebook</h3>
+                            <a href="#" class="miniButton">LIKE</a>
+                        </div>
+                        <div class="facebook__container">
+                            <div class="facebook__text">
+                                <p>1452 people like</p> <a href="#">PromoKit</a>
+                            </div>
+                            <div class="facebook__users">
+                                <a href="#"><img src="img/1/60x60.png" alt="promo picture"></a>
+                                <a href="#"><img src="img/1/60x60%20—%20копия%20(2).png" alt="promo picture"></a>
+                                <a href="#"><img src="img/1/60x60%20—%20копия.png" alt="promo picture"></a>
+                                <a href="#"><img src="img/1/60x60.png" alt="promo picture"></a>
+                                <a href="#"><img src="img/1/60x60%20—%20копия.png" alt="promo picture"></a>
+                                <a href="#"><img src="img/1/60x60.png" alt="promo picture"></a>
+                                <a href="#"><img src="img/1/60x60.png" alt="promo picture"></a>
+                                <a href="#"><img src="img/1/60x60%20—%20копия%20(2).png" alt="promo picture"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="facebook">
-                    <div class="miniHeader__button">
-                        <h3>facebook</h3>
-                        <a href="#" class="miniButton">LIKE</a>
+                <div class="footer__column_third">
+                    <div class="information">
+                        <h3>INFORMATION</h3>
+                        <ul>
+                            <li><a href="#">New products</a></li>
+                            <li><a href="#">Top sellers</a></li>
+                            <li><a href="#">Special products</a></li>
+                            <li><a href="#">Manufactures</a></li>
+                            <li><a href="#">Suppliers</a></li>
+                            <li><a href="#">Our stores</a></li>
+                        </ul>
                     </div>
-                    <div class="facebook__container">
-                        <div class="facebook__text">
-                            <p>1452 people like</p> <a href="#">PromoKit</a>
-                        </div>
-                        <div class="facebook__users">
-                            <a href="#"><img src="img/1/60x60.png" alt="promo picture"></a>
-                            <a href="#"><img src="img/1/60x60%20—%20копия%20(2).png" alt="promo picture"></a>
-                            <a href="#"><img src="img/1/60x60%20—%20копия.png" alt="promo picture"></a>
-                            <a href="#"><img src="img/1/60x60.png" alt="promo picture"></a>
-                            <a href="#"><img src="img/1/60x60%20—%20копия.png" alt="promo picture"></a>
-                            <a href="#"><img src="img/1/60x60.png" alt="promo picture"></a>
-                            <a href="#"><img src="img/1/60x60.png" alt="promo picture"></a>
-                            <a href="#"><img src="img/1/60x60%20—%20копия%20(2).png" alt="promo picture"></a>
-                        </div>
+                    <div class="myAccount">
+                        <h3>MY ACCOUNT</h3>
+                        <ul>
+                            <li><a href="#">My account</a></li>
+                            <li><a href="#">Personal information</a></li>
+                            <li><a href="#">Addresses</a></li>
+                            <li><a href="#">Discount</a></li>
+                            <li><a href="#">Orders history</a></li>
+                            <li><a href="#">Your Vouchers</a></li>
+                        </ul>
+                    </div>
+                    <div class="customer">
+                        <h3>Customer Service</h3>
+                        <ul>
+                            <li><a href="#">Help & contact</a></li>
+                            <li><a href="#">Shipping & taxes</a></li>
+                            <li><a href="#">Return policy</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Legal Notice</a></li>
+                        </ul>
+                    </div>
+                    <div class="contacts">
+                        <h3>CONTACT INFO</h3>
+                        <ul>
+                            <li>Vigo Shop Ltd</li>
+                            <li>United Kingdom</li>
+                            <li>London 02587</li>
+                            <li>Oxford Street 48/188</li>
+                            <li>Working days: Mon. - Sun.</li>
+                            <li>Working hours: 9 AM - 8 PM</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="footer__column_third">
-                <div class="information">
-                    <h3>INFORMATION</h3>
+
+            <div class="footer__Links">
+                <div class="paymentSystems">
                     <ul>
-                        <li><a href="#">New products</a></li>
-                        <li><a href="#">Top sellers</a></li>
-                        <li><a href="#">Special products</a></li>
-                        <li><a href="#">Manufactures</a></li>
-                        <li><a href="#">Suppliers</a></li>
-                        <li><a href="#">Our stores</a></li>
+                        <li><img src="img/1/credit%20card.png" alt=""></li>
+                        <li><img src="img/1/credit%20card2.png" alt=""></li>
+                        <li><img src="img/1/credit%20card3.png" alt=""></li>
+                        <li><img src="img/1/credit%20card4.png" alt=""></li>
+                        <li><img src="img/1/credit%20card5.png" alt=""></li>
                     </ul>
                 </div>
-                <div class="myAccount">
-                    <h3>MY ACCOUNT</h3>
+                <div class="cnContainer">
                     <ul>
-                        <li><a href="#">My account</a></li>
-                        <li><a href="#">Personal information</a></li>
-                        <li><a href="#">Addresses</a></li>
-                        <li><a href="#">Discount</a></li>
-                        <li><a href="#">Orders history</a></li>
-                        <li><a href="#">Your Vouchers</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fas fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                        <li><a href="#"><i class="far fa-envelope"></i></a></li>
                     </ul>
                 </div>
-                <div class="customer">
-                    <h3>Customer Service</h3>
-                    <ul>
-                        <li><a href="#">Help & contact</a></li>
-                        <li><a href="#">Shipping & taxes</a></li>
-                        <li><a href="#">Return policy</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Affiliates</a></li>
-                        <li><a href="#">Legal Notice</a></li>
-                    </ul>
-                </div>
-                <div class="contacts">
-                    <h3>CONTACT INFO</h3>
-                    <ul>
-                        <li>Vigo Shop Ltd</li>
-                        <li>United Kingdom</li>
-                        <li>London 02587</li>
-                        <li>Oxford Street 48/188</li>
-                        <li>Working days: Mon. - Sun.</li>
-                        <li>Working hours: 9 AM - 8 PM</li>
-                    </ul>
-                </div>
+            </div>
+            <div class="reservedRights__container">
+                <p>© 2013 Powered by WooCommerce™. </p>
+                <p> All Rights Reserved.</p>
             </div>
         </div>
+    </footer>
 
-        <div class="footer__cnLinks">
-            <div class="footerInfoContainer">
-                <ul>
-                    <li><img src="img/1/credit%20card.png" alt=""></li>
-                    <li><img src="img/1/credit%20card2.png" alt=""></li>
-                    <li><img src="img/1/credit%20card3.png" alt=""></li>
-                    <li><img src="img/1/credit%20card4.png" alt=""></li>
-                    <li><img src="img/1/credit%20card5.png" alt=""></li>
-                </ul>
-                <p>© 2013 Powered by WooCommerce™. All Rights Reserved.</p>
-            </div>
-            <div class="cnContainer">
-                <ul>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                    <li><a href="#"><i class="fas fa-rss"></i></a></li>
-                    <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                    <li><a href="#"><i class="far fa-envelope"></i></a></li>
-                </ul>
-            </div>
+</div>
+</body>
 
-        </div>
-    </div>
-</footer>
 </html>

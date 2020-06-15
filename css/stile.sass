@@ -88,36 +88,66 @@ input, textarea
 .container
   max-width: 1170px
   margin: 0 auto
+  width: 100%
+
+.wrapper
+  max-width: 1920px
+  display: flex
+  flex-direction: column
+  margin: 0 auto
+
+.header
+  position: relative
 
 .header-firstline
   display: flex
   justify-content: space-between
   background: #f6f6f6
+  position: fixed
+  top: 0
+  z-index: 3
+  width: 100%
+  left: 0
 
-.header-firstline__container
+.headerNav__container
   display: flex
   width: 100%
+  position: relative
 
 .loginNavigation
   display: flex
   li
     margin: 0 10px
     @include font($color: $textLightGrey, $size: $fs11)
-    &:nth-child(5)
+    &:first-child
+      margin-left: 0
+    a
+      @include font($color: $textLightGrey, $size: $fs11)
+
+.login
+  display: flex
+  li
+    margin: 0 10px
+    @include font($color: $textLightGrey, $size: $fs11)
+    &:nth-child(2)
       margin: 0
     a
       @include font($color: $textLightGrey, $size: $fs11)
 
-.region-pannel
+.cartAndRegion-panel
+  position: absolute
+  top: 16px
+  right: 0
   @include font($color: $textLightGrey, $size: $fs11)
+  z-index: 4
   a
     margin-left: 15px
     @include font($color: $textLightGrey, $size: $fs11)
 
-
 .header__secondline
   position: relative
   height: 110px
+  margin-top: 45px
 
 .searchForm__container
   position: absolute
@@ -164,6 +194,9 @@ input, textarea
   bottom: 20px
   right: 0
 
+.cart__mobile
+  display: none
+
 .u_mainNavigation
   display: inline-flex
   margin: 0
@@ -173,7 +206,7 @@ input, textarea
     &:last-child
       margin: 10px 0 0 25px
     a
-      @include font
+      @include font($weight: bold)
       opacity: 0.8
       padding: 10px
       @include transition
@@ -236,12 +269,13 @@ input, textarea
   @include font($color: $white, $family: $bold, $size: $fs18)
   margin-top: 10px
   border: 1px solid $almostWhite
-  padding: 0 20px 20px
+  padding: 0 7px 30px
   display: inline-block
   h3
     font-size: $fs35
-    margin: 30px 5px 20px
-
+    margin: 30px 5px 0
+  p
+    margin: 13px 0 18px
 .s_showcase
   background: #f6f6f6
 
@@ -415,7 +449,7 @@ input, textarea
 .shop-item
   display: flex
   flex-direction: column
-  max-width: 270px
+  width: 23%
 
   img
     @include object-fit
@@ -525,21 +559,21 @@ input, textarea
 .aboutFengo__container, .miniItems__container, .quickContact__container
   display: flex
   margin-top: 35px
-
   img
-    //max-width: 180px
     @include object-fit
 
-.aboutFengo__text
-  padding-left: 20px
+.aboutFengo__container
   display: flex
   flex-direction: column
   justify-content: space-between
   @include font($color: $textLightGrey, $size: $fs14, $line: 1.4)
   @include transition
-
-  P
-    margin: 0
+  img
+    width: 180px
+    float: left
+    padding-right: 20px
+  a
+    line-height: 2.5
 
 .footerLink
   text-transform: uppercase
@@ -567,9 +601,9 @@ input, textarea
   margin-top: 35px
   justify-content: space-between
 
-.blogLinksItem
+.blogLinksItem1, .blogLinksItem2
   img
-    height: 150px
+    width: 205px
     @include object-fit
 
   a
@@ -639,8 +673,8 @@ input, textarea
   display: flex
   justify-content: space-between
 
-.shop-miniItem
-  max-width: 150px
+.shop-miniItem1, .shop-miniItem2
+  width: 150px
 
   img
     @include object-fit
@@ -684,7 +718,7 @@ input, textarea
     border: 1px solid $white
     @include transition
 
-.twitter__container
+.twitter__container1, .twitter__container2
   margin-top: 30px
 
 .twitter__name
@@ -707,16 +741,17 @@ input, textarea
     margin: 20px 0 0
 
 .twitter__links
+  margin-top: 20px
   display: flex
   justify-content: space-between
   @include font($color: $textGrey, $size: $fs13, $line: 1.2)
 
   p
-    margin: 20px 0 0
+    margin: 0
 
   ul
     display: flex
-    margin: 20px 0 0
+    margin: 0
 
     li
       padding-left: 20px
@@ -778,16 +813,23 @@ input, textarea
 .contacts
   @include font($color: $textLightGrey, $size: $fs14)
 
-.footer__cnLinks
+.footer__Links
   margin-top: 40px
   display: flex
   justify-content: space-between
 
-.footerInfoContainer
+.paymentSystems
   ul
     display: flex
     justify-content: space-between
+    li
+      margin: 0 8px
+      &:first-child
+        margin-left: 0
 
+.reservedRights__container
+  display: flex
+  margin: -25px 0 35px
   p
     @include font($color: $textGrey, $family: $regular, $size: $fs12)
 
@@ -828,33 +870,212 @@ input, textarea
   &:hover
     fill: $white
 
-@media (max-width: 1200px)
-
-@media only screen and (min-width: 320px) and (max-width: 480px)
+@media only screen and (max-width: 480px)
+  .wrapper
+    max-width: 480px
   .container
     max-width: 440px
     margin: 0 auto
+    padding: 0 20px
     @include box-sizing
   .loginNavigation
+    justify-content: space-around
+    width: 100%
     li
       &:nth-child(4), :nth-child(5), :nth-child(6)
         display: none
+  .cartAndRegion-panel
+    display: none
+  .login
+    display: none
+  .cart__mobile
+    display: flex
+    a
+      @include font
+      opacity: 0.8
   .nameWithStripesSlider
     display: flex
+    justify-content: center
     hr
       width: 15px
-      transform: translateY(48px)
+      transform: translateY(56px)
       border: 2px solid $white
+      margin: 0
   .sliderBig
     display: none
   .mobile__sliderBig
     display: flex
   .mobile__sliderBig__container
-    margin-top: 10px
+    margin: 20px 15px
+    width: 100%
   .showcase
+    grid-template-columns: 100%
+    grid-template-rows: 165px 540px 190px 190px 400px 190px
+    grid-gap: 10px
+  .showcase__item1
+    grid-column: unset
+    a
+      bottom: 7px
+  .leftArrow, .rightArrow
+    display: none
+  .showcase__item1__box
+    display: block
+    margin: 15px 15px 30px
+    padding: 0 20px 35px
+    font-size: 15px
+    p
+      margin: 0
+  .nameWithStripes1
+    h3
+      margin: 35px 10px 10px
+      font-size: 21px
+    hr
+      transform: translateY(43px)
+  .showcase__item2
+    grid-row: unset
+    font-size: 15px
+    a
+      bottom: 20px
+  .showcase__item2__box
+    font-size: 15px
+    p
+      margin: 0
+  .nameWithStripes2
+    h3
+      margin: 10px 5px 10px
+      font-size: 20px
+    hr
+      width: 40px
+      transform: translateY(17px)
+  .showcase__item3__box, .showcase__item6__box
+    margin-top: 60px
+    font-size: 20px
+    h3
+      margin: 0 0 15px
+      font-size: 35px
+  .showcase__item6__box
+    p
+      margin: 0
+  .nameWithStripes6
+    hr
+      width: 40px
+      transform: translateY(9px)
+    h3
+      font-size: 25px
+  .showcase__item4
+    grid-row: unset
+    order: 1
+    a
+      bottom: 50px
+  .showcase__item4__box
+    margin-top: 130px
+  .showcase__item5
+    order: 1
+  .showcase__item5
+    p
+      margin-top: 85px
+  .shop-navigation
+    margin-top: 10px
+    ul
+      display: flex
+      flex-direction: column
+      li
+        margin-top: 20px
+  .shop-container
+    margin-top: 30px
+    flex-direction: column
+    align-content: center
+  .shop-item
+    width: 100%
+    max-width: 280px
+    &:nth-child(n+6)
+      display: none
+  .shopMore
+    padding: 0 20px
+  .s_showMore
+    hr
+      transform: translateY(2px)
+  .columnContainer
+    flex-direction: column
+    padding: 0
+    margin-top: 10px
+  .footer__column_first, .footer__column_second, .footer__column_third
+    width: 100%
+    padding: 0
+  .aboutFengo, .mostFavorite, .blogLinks, .quickContact, .subscribeForm, .information, .myAccount, .customer, .contacts, .twitter, .facebook
+    margin-top: 40px
     display: flex
     flex-direction: column
-  .showcase__item1, .showcase__item2, .showcase__item3, .showcase__item4, .showcase__item5, .showcase__item6
-    margin-top: 10px
-    max-width: 440px
-
+    padding-bottom: 40px
+  .aboutFengo
+    img
+      width: 120px
+  .blogLinksItem1
+    width: 100%
+    img
+      width: 100%
+    a
+      p
+        font-size: 15px
+  .blogLinksItem2
+    display: none
+  .quickContact__container
+    flex-direction: column
+    img
+      width: 100%
+      height: 130px
+  .quickContact
+    form
+      margin-top: 20px
+      width: 100%
+  .subscribeForm
+    form
+      input
+        padding-left: 10px
+  .miniItems__container
+    margin-top: 20px
+  .shop-miniItem1, .shop-miniItem2
+    width: 47%
+    a
+      width: 100%
+      img
+        width: 100%
+  .namePrice_miniItem
+    flex-direction: column
+  .cost_miniItem
+    margin: 15px 0 0
+  .twitter__container1
+    padding-bottom: 20px
+  .twitter__links
+    margin-top: 15px
+  .facebook__container
+    a
+      text-align: center
+  .facebook__users
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    a
+      &:nth-child(8)
+        display: none
+      &:nth-child(7)
+        display: none
+  .footer__Links
+    flex-direction: column
+    padding: 0 20px
+  .cnContainer
+    ul
+      flex-wrap: wrap
+      li
+        margin: 0 4px 8px
+  .paymentSystems
+    ul
+      display: flex
+      justify-content: space-around
+  .cnContainer
+    flex-wrap: wrap
+  .reservedRights__container
+    display: flex
+    flex-direction: column
+    margin: 0 0 35px
+    p
+      margin: 0 20px 5px
